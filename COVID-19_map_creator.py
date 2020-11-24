@@ -1,4 +1,5 @@
 import pyautogui
+from selenium import webdriver
 import time
 import cv2
 import pandas
@@ -9,28 +10,16 @@ import os
 from datetime import datetime
 import folium
 
-time.sleep(2)
-link="https://www.doh.wa.gov/Emergencies/COVID19/DataDashboard"
-pyautogui.click(1388, 2103)
-time.sleep(1)
-pyautogui.hotkey("Win", "up")
-time.sleep(1)
-pyautogui.click(2224, 117)
-pyautogui.typewrite(link)
-time.sleep(1)
-pyautogui.typewrite(["enter"])
-time.sleep(3)
-button=pyautogui.locateOnScreen("path_to_the_image_reference//img_of_link_to_click.PNG", grayscale=True, confidence=.5)
-btn=pyautogui.center(button)
-btn_x,btn_y=btn
-pyautogui.click(btn_x, btn_y)
-time.sleep(3)
-#print(pyautogui.position())
-pyautogui.click(x=1142, y=296)
+driver = webdriver.Chrome()
+driver.get("https://www.doh.wa.gov/Emergencies/COVID19/DataDashboard")
+time.sleep(10)
+button = driver.find_element_by_xpath('//a[@class="NoCacheLink"and contains(., "Cases and Deaths by Week")]')
+button.click()
+print("Success!")
 time.sleep(10)
 pyautogui.hotkey("CTRL", "w")
 print("Download of data from site is successfully completed!")
-time.sleep(20)
+time.sleep(10)
 
 xlsx_file=Path('Cases', 'path_to_Downloads_folder//name_of_excel_file_to_be_downloaded_from_site.xlsx') #PUBLIC_CDC_Event_Date_SARS.xlsx
 wb_obj=openpyxl.load_workbook(xlsx_file)
