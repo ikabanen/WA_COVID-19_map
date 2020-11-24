@@ -1,4 +1,3 @@
-import pyautogui
 from selenium import webdriver
 import time
 import cv2
@@ -17,9 +16,10 @@ button = driver.find_element_by_xpath('//a[@class="NoCacheLink"and contains(., "
 button.click()
 print("Success!")
 time.sleep(10)
-pyautogui.hotkey("CTRL", "w")
+driver.close()
+driver.quit()
 print("Download of data from site is successfully completed!")
-time.sleep(10)
+time.sleep(5)
 
 xlsx_file=Path('Cases', 'path_to_Downloads_folder//name_of_excel_file_to_be_downloaded_from_site.xlsx') #PUBLIC_CDC_Event_Date_SARS.xlsx
 wb_obj=openpyxl.load_workbook(xlsx_file)
