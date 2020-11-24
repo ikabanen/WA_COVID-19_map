@@ -3,7 +3,6 @@ import time
 import cv2
 import pandas
 import csv
-import json
 import openpyxl
 from pathlib import Path
 import os
@@ -192,21 +191,11 @@ var=val.replace("]]]}}, {", "]]]}},\n{")
 new_var='{"type":"FeatureCollection","features":'  + var + "}"
 file.seek(0)
 file.write(new_var)
-
 file.seek(0)
 val_1=file.read()
 val2=val_1.replace("\'","\"")
 file.seek(0)
 file.write(val2)
-
-file.seek(0)
-val3=file.read()
-a=json.loads(val3)
-
-new_json_file=path+'//COVID.json'
-with open(new_json_file, "w") as write_file: #CREATING NEW FILE
-    json.dump(a, write_file) #writing data as one line only
-
 
 some_list=[]
 with open(new_csv_file, newline='') as csvfile:
@@ -214,7 +203,7 @@ with open(new_csv_file, newline='') as csvfile:
     for j in reader:
         cnty=(j["COUNTIES"])
         cases = int((j["DATA"]))
-        df=pandas.read_json(new_json_file)
+        df=pandas.read_json(new_txt_file)
         file=df.features
         for i in range(len(file)):
             dict=file[i]['properties']
@@ -234,12 +223,6 @@ var=new_var.replace("\'","\"")
 
 file.seek(0)
 file.write(var)
-file.seek(0)
-a_2=file.read()
-a_3=json.loads(a_2)
-
-with open(new_json_file, "w") as write_file2: #CREATING NEW FILE
-    json.dump(a_3, write_file2) #writing data as one line only
 
 data = pandas.read_csv(new_csv_file)
 nm = list(data["COUNTIES"])
@@ -262,13 +245,11 @@ def color_producer(cases_num):
         return 'white'
 
 map = folium.Map(location=[47.034751, -122.825991], zoom_start=8, tiles="Stamen Terrain")
-
-fg = folium.FeatureGroup(name="My Map")
-
+fg = folium.FeatureGroup(name="WA COVID-19 Map")
 for lt, ln, n, cs in zip(lat, lon, nm, cases):
     fg.add_child(folium.Marker(location=[lt, ln], popup=n + ": Cases " + str(cs), icon=folium.Icon(color=color_producer(cs)), color = 'gray', fill_opacity=0.7))
 
-fg.add_child(folium.GeoJson(data=open(new_json_file,'r',encoding='utf-8-sig').read(),
+fg.add_child(folium.GeoJson(data=open(new_txt_file,'r',encoding='utf-8-sig').read(),
                             style_function=lambda x: {'fillColor':'white' if x['properties']['CASES'] == 0
                             else 'green' if 0 < x['properties']['CASES'] <= 50 else 'orange' if 50 < x['properties']['CASES'] <= 300
                             else 'blue' if 300 < x['properties']['CASES'] <= 500 else 'red' if 500 < x['properties']['CASES'] <= 10000 else 'black'}))
@@ -277,6 +258,6 @@ map.add_child(fg)
 new_map_file=path+'//Map_Corona_WA.html'
 map.save(new_map_file)
 
-os.rename(r'C://Users//Lucky//Downloads//PUBLIC_CDC_Event_Date_SARS.xlsx',r'C://Users//Lucky//Downloads//PUBLIC_CDC_Event_Date_SARS'+str(datetime.now().strftime("%d-%m-%Y_%I-%M-%S_%p"))+'.xlsx')
+os.rename(r'path_to_Downloads_folder//name_of_excel_file_to_be_downloaded_from_site.xlsx',r'path_to_Downloads_folder//name_of_excel_file_to_be_downloaded_from_site'+str(datetime.now().strftime("%d-%m-%Y_%I-%M-%S_%p"))+'.xlsx')
 
 print("DONE!")
