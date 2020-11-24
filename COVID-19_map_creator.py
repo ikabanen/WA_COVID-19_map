@@ -21,7 +21,7 @@ pyautogui.typewrite(link)
 time.sleep(1)
 pyautogui.typewrite(["enter"])
 time.sleep(3)
-button=pyautogui.locateOnScreen("C://Users//Lucky//Desktop//MAP//link_to_click.PNG", grayscale=True, confidence=.5)
+button=pyautogui.locateOnScreen("path_to_the_image_reference//img_of_link_to_click.PNG", grayscale=True, confidence=.5)
 btn=pyautogui.center(button)
 btn_x,btn_y=btn
 pyautogui.click(btn_x, btn_y)
@@ -33,7 +33,7 @@ pyautogui.hotkey("CTRL", "w")
 print("Download of data from site is successfully completed!")
 time.sleep(20)
 
-xlsx_file=Path('Cases', 'C://Users//Lucky//Downloads//PUBLIC_CDC_Event_Date_SARS.xlsx') #DO NOT FORGET TO DELETE THIS FILE AFTER
+xlsx_file=Path('Cases', 'path_to_Downloads_folder//name_of_excel_file_to_be_downloaded_from_site.xlsx') #PUBLIC_CDC_Event_Date_SARS.xlsx
 wb_obj=openpyxl.load_workbook(xlsx_file)
 sheet=wb_obj.active
 
@@ -92,7 +92,7 @@ except IndexError:
     pass
 
 crdts=[]
-with open("C://Users//Lucky//Desktop//MAP//Data_for_Pandas.csv", newline='') as csvfile: #need to have this file with coordinates data for each county. Make sure this document exists with 4 columns named "COUNTIES","DATA","LON","LAT"!!!
+with open("path_to_folder_with_existing_data//file_with_coordinates_data_for_each_county.csv", newline='') as csvfile: #need to have this file with coordinates data for each county. Make sure this document exists with 4 columns named "COUNTIES","DATA","LON","LAT"!!!
     reader=csv.DictReader(csvfile)
     for j in reader:
         cnty=(j["COUNTIES"])
@@ -112,8 +112,8 @@ except IndexError:
     pass
 #print(res1)
 
-directory = str(datetime.now().strftime("%d-%m-%Y_%I-%M-%S_%p")) #creating directory inside C://Users//Lucky//Desktop//MAP//
-parent_dir = "C://Users//Lucky//Desktop//MAP//"
+directory = str(datetime.now().strftime("%d-%m-%Y_%I-%M-%S_%p")) #creating new directory inside parent_dir
+parent_dir = "path_to_the_folder_where_new_directory_with_new_files_are_going_to_be_stored"
 path = os.path.join(parent_dir, directory)
 os.mkdir(path)
 new_csv_file=path+'//COVID.csv'
@@ -148,7 +148,7 @@ with open(new_csv_file, newline='') as csvfile: #accessing new created file in d
     mx_lat=float(max(mx_mn_lat))
     #print("btwn: ", mn_lat, "and", mx_lat)
 
-df = pandas.read_json("C://Users//Lucky//Desktop//MAP//US_counties_borders.json") #File that contains USA counties border coordinates. Make sure this file exists. This is template for county coordinates. Do not delete or remove this file. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+df = pandas.read_json("path_to_folder_with_existing_data//US_counties_borders_file.json") #File that contains USA counties border coordinates. Make sure this file exists. This is template for county coordinates. Do not delete or remove this file. !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 file=df.features
 new_val=[]
 for i in range(len(file)):
@@ -276,6 +276,7 @@ fg.add_child(folium.GeoJson(data=open(new_json_file,'r',encoding='utf-8-sig').re
 map.add_child(fg)
 new_map_file=path+'//Map_Corona_WA.html'
 map.save(new_map_file)
-print("DONE!")
 
 os.rename(r'C://Users//Lucky//Downloads//PUBLIC_CDC_Event_Date_SARS.xlsx',r'C://Users//Lucky//Downloads//PUBLIC_CDC_Event_Date_SARS'+str(datetime.now().strftime("%d-%m-%Y_%I-%M-%S_%p"))+'.xlsx')
+
+print("DONE!")
