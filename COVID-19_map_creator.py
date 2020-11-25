@@ -9,19 +9,29 @@ import os
 from datetime import datetime
 import folium
 
-driver = webdriver.Chrome()
+from selenium.webdriver.chrome.options import Options
+import requests
+import requests
+
+chrome_options = Options()
+chrome_options.add_argument("--headless")
+driver = webdriver.Chrome('C://Users//Lucky//AppData//Local//Programs//Python//Python38//chromedriver.exe', options=chrome_options)
 driver.get("https://www.doh.wa.gov/Emergencies/COVID19/DataDashboard")
 time.sleep(10)
 button = driver.find_element_by_xpath('//a[@class="NoCacheLink"and contains(., "Cases and Deaths by Week")]')
-button.click()
-print("Success!")
-time.sleep(10)
-driver.close()
+href = button.get_attribute('href')
+print (href)
 driver.quit()
+print("Link was successfully captured!")
+
+dataFile = requests.get(href, allow_redirects=True)
+WA_data_file='path_to_Downloads_folder//name_of_excel_file_to_be_downloaded_from_site.xlsx'
+open(WA_data_file, 'wb').write(dataFile .content) #writing excel file into downloads folder
 print("Download of data from site is successfully completed!")
 time.sleep(5)
 
-xlsx_file=Path('Cases', 'path_to_Downloads_folder//name_of_excel_file_to_be_downloaded_from_site.xlsx') #PUBLIC_CDC_Event_Date_SARS.xlsx
+
+xlsx_file=Path('Cases', WA_data_file) #PUBLIC_CDC_Event_Date_SARS.xlsx
 wb_obj=openpyxl.load_workbook(xlsx_file)
 sheet=wb_obj.active
 
