@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_27517091e9ee4ba7b17f7169755a3979 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_27517091e9ee4ba7b17f7169755a3979" ></div>
+        
+</body>
+<script>    
+    
+            var map_27517091e9ee4ba7b17f7169755a3979 = L.map(
+                "map_27517091e9ee4ba7b17f7169755a3979",
+                {
+                    center: [47.034751, -122.825991],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 8,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5c48c3d74efb4cd48073481aa80f43ae = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_27517091e9ee4ba7b17f7169755a3979);
+        
+    
+            var feature_group_0a03017b37a240a0b8063e70c813f91b = L.featureGroup(
+                {}
+            ).addTo(map_27517091e9ee4ba7b17f7169755a3979);
+        
+    
+            var marker_eb19de110e1648bca15a106150047524 = L.marker(
+                [46.9272, -118.51100000000001],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_1a96d7a6c0ff45dfba8f98da96bce0ba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_eb19de110e1648bca15a106150047524.setIcon(icon_1a96d7a6c0ff45dfba8f98da96bce0ba);
+        
+    
+        var popup_4bad36cd45264fe784aa766b011738ec = L.popup({"maxWidth": "100%"});
+
+        
+            var html_891c93bc51b4490999d7e2fd4b460981 = $(`<div id="html_891c93bc51b4490999d7e2fd4b460981" style="width: 100.0%; height: 100.0%;">Adams: Cases 1122</div>`)[0];
+            popup_4bad36cd45264fe784aa766b011738ec.setContent(html_891c93bc51b4490999d7e2fd4b460981);
+        
+
+        marker_eb19de110e1648bca15a106150047524.bindPopup(popup_4bad36cd45264fe784aa766b011738ec)
+        ;
+
+        
+    
+    
+            var marker_97694c95c984472ba8f1960af2305bbd = L.marker(
+                [46.1998773, -117.18432659999998],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_5f7532816fdd4e099fd243e63dc60e9d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_97694c95c984472ba8f1960af2305bbd.setIcon(icon_5f7532816fdd4e099fd243e63dc60e9d);
+        
+    
+        var popup_35d2bd4798b84e80b68bf4136cb60ba2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0ecc9d69b4b459687b5bbc027793d12 = $(`<div id="html_d0ecc9d69b4b459687b5bbc027793d12" style="width: 100.0%; height: 100.0%;">Asotin: Cases 505</div>`)[0];
+            popup_35d2bd4798b84e80b68bf4136cb60ba2.setContent(html_d0ecc9d69b4b459687b5bbc027793d12);
+        
+
+        marker_97694c95c984472ba8f1960af2305bbd.bindPopup(popup_35d2bd4798b84e80b68bf4136cb60ba2)
+        ;
+
+        
+    
+    
+            var marker_5f12a32673f8436f82859c094d3a8521 = L.marker(
+                [46.3166, -119.5022],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_96086632dc524dfd8ecd57f3bf7e98da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_5f12a32673f8436f82859c094d3a8521.setIcon(icon_96086632dc524dfd8ecd57f3bf7e98da);
+        
+    
+        var popup_90a1d24515e94f54b7f73596cf3de1b6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_cc4a2bb1d98641b2becc0ab3cf67dade = $(`<div id="html_cc4a2bb1d98641b2becc0ab3cf67dade" style="width: 100.0%; height: 100.0%;">Benton: Cases 6508</div>`)[0];
+            popup_90a1d24515e94f54b7f73596cf3de1b6.setContent(html_cc4a2bb1d98641b2becc0ab3cf67dade);
+        
+
+        marker_5f12a32673f8436f82859c094d3a8521.bindPopup(popup_90a1d24515e94f54b7f73596cf3de1b6)
+        ;
+
+        
+    
+    
+            var marker_69857327b3be4a84be0711c22fb63fd7 = L.marker(
+                [47.9445, -120.6749],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_eb56134e1bff40d7aba66ced1cbfc382 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_69857327b3be4a84be0711c22fb63fd7.setIcon(icon_eb56134e1bff40d7aba66ced1cbfc382);
+        
+    
+        var popup_452e85ff55f6411ea8afbfa503e87fed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86908b316b8541ceb4506c7b83791ed1 = $(`<div id="html_86908b316b8541ceb4506c7b83791ed1" style="width: 100.0%; height: 100.0%;">Chelan: Cases 2171</div>`)[0];
+            popup_452e85ff55f6411ea8afbfa503e87fed.setContent(html_86908b316b8541ceb4506c7b83791ed1);
+        
+
+        marker_69857327b3be4a84be0711c22fb63fd7.bindPopup(popup_452e85ff55f6411ea8afbfa503e87fed)
+        ;
+
+        
+    
+    
+            var marker_c435f85cbaa445e5a57dd10f603061eb = L.marker(
+                [48.0405, -124.0168],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_5e9cd83bf3374f6ba0982c0d7475d794 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_c435f85cbaa445e5a57dd10f603061eb.setIcon(icon_5e9cd83bf3374f6ba0982c0d7475d794);
+        
+    
+        var popup_aac55211b10d4f26ab84bd8fd41a0aed = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ba7e5fa20aeb40848e5cfd36216f4f6c = $(`<div id="html_ba7e5fa20aeb40848e5cfd36216f4f6c" style="width: 100.0%; height: 100.0%;">Clallam: Cases 313</div>`)[0];
+            popup_aac55211b10d4f26ab84bd8fd41a0aed.setContent(html_ba7e5fa20aeb40848e5cfd36216f4f6c);
+        
+
+        marker_c435f85cbaa445e5a57dd10f603061eb.bindPopup(popup_aac55211b10d4f26ab84bd8fd41a0aed)
+        ;
+
+        
+    
+    
+            var marker_6314eb1e5938490a97850837f0459f7a = L.marker(
+                [45.7466, -122.5194],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_50248971cc1d4f03a2b0830d84022531 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_6314eb1e5938490a97850837f0459f7a.setIcon(icon_50248971cc1d4f03a2b0830d84022531);
+        
+    
+        var popup_b8c4dfea201e4972b3d355a128aa7997 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7b901d5099e4468b90874d446745c0cf = $(`<div id="html_7b901d5099e4468b90874d446745c0cf" style="width: 100.0%; height: 100.0%;">Clark: Cases 5985</div>`)[0];
+            popup_b8c4dfea201e4972b3d355a128aa7997.setContent(html_7b901d5099e4468b90874d446745c0cf);
+        
+
+        marker_6314eb1e5938490a97850837f0459f7a.bindPopup(popup_b8c4dfea201e4972b3d355a128aa7997)
+        ;
+
+        
+    
+    
+            var marker_fc4e5df2cedc4c53aacefb7a719879ec = L.marker(
+                [46.2775, -117.8143],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_9e6caa5c12b04927be7085260bdca651 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_fc4e5df2cedc4c53aacefb7a719879ec.setIcon(icon_9e6caa5c12b04927be7085260bdca651);
+        
+    
+        var popup_6608481761114ba69fd6efcf4dd70716 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f2ceac9f2e71437c850d300cb16a1ede = $(`<div id="html_f2ceac9f2e71437c850d300cb16a1ede" style="width: 100.0%; height: 100.0%;">Columbia: Cases 25</div>`)[0];
+            popup_6608481761114ba69fd6efcf4dd70716.setContent(html_f2ceac9f2e71437c850d300cb16a1ede);
+        
+
+        marker_fc4e5df2cedc4c53aacefb7a719879ec.bindPopup(popup_6608481761114ba69fd6efcf4dd70716)
+        ;
+
+        
+    
+    
+            var marker_2cd3d67eb22841bdb8099435aeb106e1 = L.marker(
+                [46.1746, -122.7747],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_5cbfa04877bf4a1cab0c64b134b67c65 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2cd3d67eb22841bdb8099435aeb106e1.setIcon(icon_5cbfa04877bf4a1cab0c64b134b67c65);
+        
+    
+        var popup_a7a45157a29a40d8a7406cc5eb5a3064 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5ab2ef1df4e74de08d323ddd90579880 = $(`<div id="html_5ab2ef1df4e74de08d323ddd90579880" style="width: 100.0%; height: 100.0%;">Cowlitz: Cases 1030</div>`)[0];
+            popup_a7a45157a29a40d8a7406cc5eb5a3064.setContent(html_5ab2ef1df4e74de08d323ddd90579880);
+        
+
+        marker_2cd3d67eb22841bdb8099435aeb106e1.bindPopup(popup_a7a45157a29a40d8a7406cc5eb5a3064)
+        ;
+
+        
+    
+    
+            var marker_9b65c700e3eb46838a2228eed0451c52 = L.marker(
+                [47.7791, -119.7475],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_0b7c55eb127243e892d09a9f4a727233 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9b65c700e3eb46838a2228eed0451c52.setIcon(icon_0b7c55eb127243e892d09a9f4a727233);
+        
+    
+        var popup_92dd6eec9f9143c48e74fa1d867e20ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1ae8a59cb39548edba4be98d4918c591 = $(`<div id="html_1ae8a59cb39548edba4be98d4918c591" style="width: 100.0%; height: 100.0%;">Douglas: Cases 1279</div>`)[0];
+            popup_92dd6eec9f9143c48e74fa1d867e20ac.setContent(html_1ae8a59cb39548edba4be98d4918c591);
+        
+
+        marker_9b65c700e3eb46838a2228eed0451c52.bindPopup(popup_92dd6eec9f9143c48e74fa1d867e20ac)
+        ;
+
+        
+    
+    
+            var marker_c7691dc298254113ab180189361fb680 = L.marker(
+                [48.4718, -118.4974],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_9dea4b14610b44628951b0cf3237c4d0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c7691dc298254113ab180189361fb680.setIcon(icon_9dea4b14610b44628951b0cf3237c4d0);
+        
+    
+        var popup_6cc02f72fe314b6dade3dee35c1ec37b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0cc8ff3cb5314c94b6de60dc777b1e61 = $(`<div id="html_0cc8ff3cb5314c94b6de60dc777b1e61" style="width: 100.0%; height: 100.0%;">Ferry: Cases 42</div>`)[0];
+            popup_6cc02f72fe314b6dade3dee35c1ec37b.setContent(html_0cc8ff3cb5314c94b6de60dc777b1e61);
+        
+
+        marker_c7691dc298254113ab180189361fb680.bindPopup(popup_6cc02f72fe314b6dade3dee35c1ec37b)
+        ;
+
+        
+    
+    
+            var marker_04f2753cb3d5476c8ee4be03c8247ef1 = L.marker(
+                [46.4937, -118.8672],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_2bf53111450c4eddb0574a462f6ab082 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_04f2753cb3d5476c8ee4be03c8247ef1.setIcon(icon_2bf53111450c4eddb0574a462f6ab082);
+        
+    
+        var popup_a27bf71c3a7f48a598cda67229ad63e9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a04457dd2c3f4eb5bdf4500f25912389 = $(`<div id="html_a04457dd2c3f4eb5bdf4500f25912389" style="width: 100.0%; height: 100.0%;">Franklin: Cases 5470</div>`)[0];
+            popup_a27bf71c3a7f48a598cda67229ad63e9.setContent(html_a04457dd2c3f4eb5bdf4500f25912389);
+        
+
+        marker_04f2753cb3d5476c8ee4be03c8247ef1.bindPopup(popup_a27bf71c3a7f48a598cda67229ad63e9)
+        ;
+
+        
+    
+    
+            var marker_29f677b5387c4a9dbfff9e58d212598b = L.marker(
+                [46.5186, -117.5277],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_802a8a4dce4047bab5dba9ebf854b16c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_29f677b5387c4a9dbfff9e58d212598b.setIcon(icon_802a8a4dce4047bab5dba9ebf854b16c);
+        
+    
+        var popup_131272c3552b4a4b9db6c0ba1fdbc903 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a4eea42032e340c29158b375d3455a32 = $(`<div id="html_a4eea42032e340c29158b375d3455a32" style="width: 100.0%; height: 100.0%;">Garfield: Cases 51</div>`)[0];
+            popup_131272c3552b4a4b9db6c0ba1fdbc903.setContent(html_a4eea42032e340c29158b375d3455a32);
+        
+
+        marker_29f677b5387c4a9dbfff9e58d212598b.bindPopup(popup_131272c3552b4a4b9db6c0ba1fdbc903)
+        ;
+
+        
+    
+    
+            var marker_2fc549e6303e47f481960def18c6f4b5 = L.marker(
+                [47.1981, -119.3732],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_085cebb478824b8bb060402090728c02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2fc549e6303e47f481960def18c6f4b5.setIcon(icon_085cebb478824b8bb060402090728c02);
+        
+    
+        var popup_39f8d90761034e7abeeef0498812a166 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_becc731927724c718781823e57bf5d35 = $(`<div id="html_becc731927724c718781823e57bf5d35" style="width: 100.0%; height: 100.0%;">Grant: Cases 3653</div>`)[0];
+            popup_39f8d90761034e7abeeef0498812a166.setContent(html_becc731927724c718781823e57bf5d35);
+        
+
+        marker_2fc549e6303e47f481960def18c6f4b5.bindPopup(popup_39f8d90761034e7abeeef0498812a166)
+        ;
+
+        
+    
+    
+            var marker_151d5d0ec96f4501a9b1dd22e9405764 = L.marker(
+                [46.9954, -123.7012],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_116f598cc9384b029c0787b6491cc4a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_151d5d0ec96f4501a9b1dd22e9405764.setIcon(icon_116f598cc9384b029c0787b6491cc4a3);
+        
+    
+        var popup_cb75fde017b6409e953ee011d4566261 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67ce49f423ca4651910a041dda3ac1f6 = $(`<div id="html_67ce49f423ca4651910a041dda3ac1f6" style="width: 100.0%; height: 100.0%;">Grays Harbor: Cases 863</div>`)[0];
+            popup_cb75fde017b6409e953ee011d4566261.setContent(html_67ce49f423ca4651910a041dda3ac1f6);
+        
+
+        marker_151d5d0ec96f4501a9b1dd22e9405764.bindPopup(popup_cb75fde017b6409e953ee011d4566261)
+        ;
+
+        
+    
+    
+            var marker_f2449b6bd6584e4a96ae0b2d07c63398 = L.marker(
+                [48.133151299999994, -122.58460409999999],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_94be3bcc38d347ad98651cf260ccc948 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_f2449b6bd6584e4a96ae0b2d07c63398.setIcon(icon_94be3bcc38d347ad98651cf260ccc948);
+        
+    
+        var popup_06ea0cc86dcb4effb18e3554461d61d6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8cf7d8ca9a234ec697cd391c61150594 = $(`<div id="html_8cf7d8ca9a234ec697cd391c61150594" style="width: 100.0%; height: 100.0%;">Island: Cases 499</div>`)[0];
+            popup_06ea0cc86dcb4effb18e3554461d61d6.setContent(html_8cf7d8ca9a234ec697cd391c61150594);
+        
+
+        marker_f2449b6bd6584e4a96ae0b2d07c63398.bindPopup(popup_06ea0cc86dcb4effb18e3554461d61d6)
+        ;
+
+        
+    
+    
+            var marker_737e79246f27444285e465bfe75a5881 = L.marker(
+                [47.7425, -123.304],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_b3bf41f4c8dd4770812a70b03c41db15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_737e79246f27444285e465bfe75a5881.setIcon(icon_b3bf41f4c8dd4770812a70b03c41db15);
+        
+    
+        var popup_8acdb5b21bca4b78a382f5eb3eb356fc = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33d8429ec4ad475ba787f895802e49b3 = $(`<div id="html_33d8429ec4ad475ba787f895802e49b3" style="width: 100.0%; height: 100.0%;">Jefferson: Cases 114</div>`)[0];
+            popup_8acdb5b21bca4b78a382f5eb3eb356fc.setContent(html_33d8429ec4ad475ba787f895802e49b3);
+        
+
+        marker_737e79246f27444285e465bfe75a5881.bindPopup(popup_8acdb5b21bca4b78a382f5eb3eb356fc)
+        ;
+
+        
+    
+    
+            var marker_042c86c1d952461db67d047b67aa3381 = L.marker(
+                [47.548, -121.9836],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_863dc5f05a764795bf81a07ecb943f24 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_042c86c1d952461db67d047b67aa3381.setIcon(icon_863dc5f05a764795bf81a07ecb943f24);
+        
+    
+        var popup_9643b6dd03524c839d40febdb4d79488 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28ba62264e084440873ea96e00cdbfdc = $(`<div id="html_28ba62264e084440873ea96e00cdbfdc" style="width: 100.0%; height: 100.0%;">King: Cases 34415</div>`)[0];
+            popup_9643b6dd03524c839d40febdb4d79488.setContent(html_28ba62264e084440873ea96e00cdbfdc);
+        
+
+        marker_042c86c1d952461db67d047b67aa3381.bindPopup(popup_9643b6dd03524c839d40febdb4d79488)
+        ;
+
+        
+    
+    
+            var marker_9000393e1e6540679f0780ebc64d0cd3 = L.marker(
+                [47.6477, -122.6413],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_63e9b05cc9384a6b831c565dc8ba79e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9000393e1e6540679f0780ebc64d0cd3.setIcon(icon_63e9b05cc9384a6b831c565dc8ba79e2);
+        
+    
+        var popup_1d024443c4a144b09911ec7f30cd3300 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_099c3ee537b64c0db1ce653aa6ee1364 = $(`<div id="html_099c3ee537b64c0db1ce653aa6ee1364" style="width: 100.0%; height: 100.0%;">Kitsap: Cases 1965</div>`)[0];
+            popup_1d024443c4a144b09911ec7f30cd3300.setContent(html_099c3ee537b64c0db1ce653aa6ee1364);
+        
+
+        marker_9000393e1e6540679f0780ebc64d0cd3.bindPopup(popup_1d024443c4a144b09911ec7f30cd3300)
+        ;
+
+        
+    
+    
+            var marker_e7679a92e3c547c6a076f2f6151ccf42 = L.marker(
+                [47.175, -120.9319],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_125a60c53d604a528e4b92a8ae149531 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e7679a92e3c547c6a076f2f6151ccf42.setIcon(icon_125a60c53d604a528e4b92a8ae149531);
+        
+    
+        var popup_1b8154a93aa848558a100b96b482ef34 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_039d4512b5784a7c800f1b2839f8d9e9 = $(`<div id="html_039d4512b5784a7c800f1b2839f8d9e9" style="width: 100.0%; height: 100.0%;">Kittitas: Cases 807</div>`)[0];
+            popup_1b8154a93aa848558a100b96b482ef34.setContent(html_039d4512b5784a7c800f1b2839f8d9e9);
+        
+
+        marker_e7679a92e3c547c6a076f2f6151ccf42.bindPopup(popup_1b8154a93aa848558a100b96b482ef34)
+        ;
+
+        
+    
+    
+            var marker_2d65b096bf6c43098e505537dd95906f = L.marker(
+                [45.866513299999994, -120.7678415],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_6570b6f864f94d29a1391d5eb91f8018 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_2d65b096bf6c43098e505537dd95906f.setIcon(icon_6570b6f864f94d29a1391d5eb91f8018);
+        
+    
+        var popup_9d7a2a4ffb624c18b5a2ffb90ff703b5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ab947eb7513f480caf8dd226e1db2eed = $(`<div id="html_ab947eb7513f480caf8dd226e1db2eed" style="width: 100.0%; height: 100.0%;">Klickitat: Cases 234</div>`)[0];
+            popup_9d7a2a4ffb624c18b5a2ffb90ff703b5.setContent(html_ab947eb7513f480caf8dd226e1db2eed);
+        
+
+        marker_2d65b096bf6c43098e505537dd95906f.bindPopup(popup_9d7a2a4ffb624c18b5a2ffb90ff703b5)
+        ;
+
+        
+    
+    
+            var marker_6902edceb7134d5a88608dfccb754b5d = L.marker(
+                [46.6195, -122.4555],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_ac8652e890634e33ac18a910d5ac57ab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6902edceb7134d5a88608dfccb754b5d.setIcon(icon_ac8652e890634e33ac18a910d5ac57ab);
+        
+    
+        var popup_49eafb6b23ab42a8a08d6652a0bb184d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3c1c64b4da2c4da3a9335a9991d98fe4 = $(`<div id="html_3c1c64b4da2c4da3a9335a9991d98fe4" style="width: 100.0%; height: 100.0%;">Lewis: Cases 922</div>`)[0];
+            popup_49eafb6b23ab42a8a08d6652a0bb184d.setContent(html_3c1c64b4da2c4da3a9335a9991d98fe4);
+        
+
+        marker_6902edceb7134d5a88608dfccb754b5d.bindPopup(popup_49eafb6b23ab42a8a08d6652a0bb184d)
+        ;
+
+        
+    
+    
+            var marker_8612515a78154701a67764ad270e67b4 = L.marker(
+                [47.5321, -118.47],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_d0d519e2868b4bb3b57091ef2dd3886e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_8612515a78154701a67764ad270e67b4.setIcon(icon_d0d519e2868b4bb3b57091ef2dd3886e);
+        
+    
+        var popup_bd250cffbe714cd0aeab385fcb0d1ac6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2977e4f32ebb4245bcf05562784fc68e = $(`<div id="html_2977e4f32ebb4245bcf05562784fc68e" style="width: 100.0%; height: 100.0%;">Lincoln: Cases 105</div>`)[0];
+            popup_bd250cffbe714cd0aeab385fcb0d1ac6.setContent(html_2977e4f32ebb4245bcf05562784fc68e);
+        
+
+        marker_8612515a78154701a67764ad270e67b4.bindPopup(popup_bd250cffbe714cd0aeab385fcb0d1ac6)
+        ;
+
+        
+    
+    
+            var marker_2f23f71d97654af0a3130d4e00f545c9 = L.marker(
+                [47.4251, -123.1951],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_d67173be69b04cd3b5839db30a48ed0a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2f23f71d97654af0a3130d4e00f545c9.setIcon(icon_d67173be69b04cd3b5839db30a48ed0a);
+        
+    
+        var popup_fe6fb8b1b52d49a69d249798447e668e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_caaa65e99b994cfbaf03d37b06afd309 = $(`<div id="html_caaa65e99b994cfbaf03d37b06afd309" style="width: 100.0%; height: 100.0%;">Mason: Cases 620</div>`)[0];
+            popup_fe6fb8b1b52d49a69d249798447e668e.setContent(html_caaa65e99b994cfbaf03d37b06afd309);
+        
+
+        marker_2f23f71d97654af0a3130d4e00f545c9.bindPopup(popup_fe6fb8b1b52d49a69d249798447e668e)
+        ;
+
+        
+    
+    
+            var marker_65bcba090e934fcca040c43e683b0894 = L.marker(
+                [48.5897, -119.6522],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_14934071fab34832ad2e518ac5e2617d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_65bcba090e934fcca040c43e683b0894.setIcon(icon_14934071fab34832ad2e518ac5e2617d);
+        
+    
+        var popup_e0c9bf84bb81418e80e307269b917e62 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69af079597ec4c79b154df29a1c89530 = $(`<div id="html_69af079597ec4c79b154df29a1c89530" style="width: 100.0%; height: 100.0%;">Okanogan: Cases 1152</div>`)[0];
+            popup_e0c9bf84bb81418e80e307269b917e62.setContent(html_69af079597ec4c79b154df29a1c89530);
+        
+
+        marker_65bcba090e934fcca040c43e683b0894.bindPopup(popup_e0c9bf84bb81418e80e307269b917e62)
+        ;
+
+        
+    
+    
+            var marker_c9276c80283f4fd393b2a92b0839a052 = L.marker(
+                [46.5181, -123.8265],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_ab785623b1cf43f48c36231c8b18f0f4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c9276c80283f4fd393b2a92b0839a052.setIcon(icon_ab785623b1cf43f48c36231c8b18f0f4);
+        
+    
+        var popup_9ce44070ed974f89a03359e91c88e111 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0ab90fe7e688479fae33032fbeeac687 = $(`<div id="html_0ab90fe7e688479fae33032fbeeac687" style="width: 100.0%; height: 100.0%;">Pacific: Cases 170</div>`)[0];
+            popup_9ce44070ed974f89a03359e91c88e111.setContent(html_0ab90fe7e688479fae33032fbeeac687);
+        
+
+        marker_c9276c80283f4fd393b2a92b0839a052.bindPopup(popup_9ce44070ed974f89a03359e91c88e111)
+        ;
+
+        
+    
+    
+            var marker_31ff847695d84bd9a0aba41ca1c198cb = L.marker(
+                [48.4359, -117.3173],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_a0aa4ff0113d44edaa538e0cae40dd49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_31ff847695d84bd9a0aba41ca1c198cb.setIcon(icon_a0aa4ff0113d44edaa538e0cae40dd49);
+        
+    
+        var popup_7c05febcd6384f619797f1b1c1723acd = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c028e4e8ed941d2a4f372f14f53fdd2 = $(`<div id="html_7c028e4e8ed941d2a4f372f14f53fdd2" style="width: 100.0%; height: 100.0%;">Pend Oreille: Cases 182</div>`)[0];
+            popup_7c05febcd6384f619797f1b1c1723acd.setContent(html_7c028e4e8ed941d2a4f372f14f53fdd2);
+        
+
+        marker_31ff847695d84bd9a0aba41ca1c198cb.bindPopup(popup_7c05febcd6384f619797f1b1c1723acd)
+        ;
+
+        
+    
+    
+            var marker_862168e16ae3468986503679d32542d2 = L.marker(
+                [47.0676, -122.1295],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_1565069888ba4a04a24c3ade44ee062f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_862168e16ae3468986503679d32542d2.setIcon(icon_1565069888ba4a04a24c3ade44ee062f);
+        
+    
+        var popup_b5489fb8e6974525a7604555be4d01cb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_64e04f8e25c64956bcce1d1ddb6afe25 = $(`<div id="html_64e04f8e25c64956bcce1d1ddb6afe25" style="width: 100.0%; height: 100.0%;">Pierce: Cases 13068</div>`)[0];
+            popup_b5489fb8e6974525a7604555be4d01cb.setContent(html_64e04f8e25c64956bcce1d1ddb6afe25);
+        
+
+        marker_862168e16ae3468986503679d32542d2.bindPopup(popup_b5489fb8e6974525a7604555be4d01cb)
+        ;
+
+        
+    
+    
+            var marker_bf15c32836354dbdb2a6c93ff9b2910e = L.marker(
+                [48.6118, -122.9603],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_9b5dff76e7df413fa0a6581f8aa5c271 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bf15c32836354dbdb2a6c93ff9b2910e.setIcon(icon_9b5dff76e7df413fa0a6581f8aa5c271);
+        
+    
+        var popup_9935bb0943904bca9a0a08c6d1ddf1f1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5b7dc19a25b646dba36e646121006cd6 = $(`<div id="html_5b7dc19a25b646dba36e646121006cd6" style="width: 100.0%; height: 100.0%;">San Juan: Cases 49</div>`)[0];
+            popup_9935bb0943904bca9a0a08c6d1ddf1f1.setContent(html_5b7dc19a25b646dba36e646121006cd6);
+        
+
+        marker_bf15c32836354dbdb2a6c93ff9b2910e.bindPopup(popup_9935bb0943904bca9a0a08c6d1ddf1f1)
+        ;
+
+        
+    
+    
+            var marker_c616f29dc84c4f4b8e4d5a7739141c97 = L.marker(
+                [48.4242, -121.7114],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_80dd4be4222046e0a539f84069fe5dac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c616f29dc84c4f4b8e4d5a7739141c97.setIcon(icon_80dd4be4222046e0a539f84069fe5dac);
+        
+    
+        var popup_5a9406253aad4c94858e005f1b01ff23 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a77665263ce4caaa3dab277e8e6c1b3 = $(`<div id="html_3a77665263ce4caaa3dab277e8e6c1b3" style="width: 100.0%; height: 100.0%;">Skagit: Cases 1621</div>`)[0];
+            popup_5a9406253aad4c94858e005f1b01ff23.setContent(html_3a77665263ce4caaa3dab277e8e6c1b3);
+        
+
+        marker_c616f29dc84c4f4b8e4d5a7739141c97.bindPopup(popup_5a9406253aad4c94858e005f1b01ff23)
+        ;
+
+        
+    
+    
+            var marker_327e6e9873b74b55bb1f2d5364e4ab96 = L.marker(
+                [45.9429, -121.8962],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_ca8671a44b8d4d8384e1d05751cc0031 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_327e6e9873b74b55bb1f2d5364e4ab96.setIcon(icon_ca8671a44b8d4d8384e1d05751cc0031);
+        
+    
+        var popup_270258451bfb470d99e521d0b5907fb3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_296bacc5b7a0467cb7dfdd7b08660242 = $(`<div id="html_296bacc5b7a0467cb7dfdd7b08660242" style="width: 100.0%; height: 100.0%;">Skamania: Cases 84</div>`)[0];
+            popup_270258451bfb470d99e521d0b5907fb3.setContent(html_296bacc5b7a0467cb7dfdd7b08660242);
+        
+
+        marker_327e6e9873b74b55bb1f2d5364e4ab96.bindPopup(popup_270258451bfb470d99e521d0b5907fb3)
+        ;
+
+        
+    
+    
+            var marker_7dac63da421b46189e5ab61450e0f48a = L.marker(
+                [48.033, -121.8339],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_6ff2999fc2b84f99ba4864651399ed36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_7dac63da421b46189e5ab61450e0f48a.setIcon(icon_6ff2999fc2b84f99ba4864651399ed36);
+        
+    
+        var popup_413d5d97a4664ff98c6b9742819f758e = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b4a7343562804347a2b8c9bf9b8d0e04 = $(`<div id="html_b4a7343562804347a2b8c9bf9b8d0e04" style="width: 100.0%; height: 100.0%;">Snohomish: Cases 11298</div>`)[0];
+            popup_413d5d97a4664ff98c6b9742819f758e.setContent(html_b4a7343562804347a2b8c9bf9b8d0e04);
+        
+
+        marker_7dac63da421b46189e5ab61450e0f48a.bindPopup(popup_413d5d97a4664ff98c6b9742819f758e)
+        ;
+
+        
+    
+    
+            var marker_5e3bbd5b5c3a47bea438fce150789d37 = L.marker(
+                [47.6587, -117.4225],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_410302375f5646dcb98d93b51469e492 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_5e3bbd5b5c3a47bea438fce150789d37.setIcon(icon_410302375f5646dcb98d93b51469e492);
+        
+    
+        var popup_72bbe09fce3a4c52a1f553c25382be8a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_57392455c06545c095b327f63020dddb = $(`<div id="html_57392455c06545c095b327f63020dddb" style="width: 100.0%; height: 100.0%;">Spokane: Cases 12442</div>`)[0];
+            popup_72bbe09fce3a4c52a1f553c25382be8a.setContent(html_57392455c06545c095b327f63020dddb);
+        
+
+        marker_5e3bbd5b5c3a47bea438fce150789d37.bindPopup(popup_72bbe09fce3a4c52a1f553c25382be8a)
+        ;
+
+        
+    
+    
+            var marker_cf57d1f526db421ead9d6289bfcbf276 = L.marker(
+                [48.4558, -117.906],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_a1c797949f274da4936966c2682d3e03 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "pink", "prefix": "glyphicon"}
+            );
+            marker_cf57d1f526db421ead9d6289bfcbf276.setIcon(icon_a1c797949f274da4936966c2682d3e03);
+        
+    
+        var popup_4a13d965103944439d631a38ce86b8e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e4c7457972a246a687f969d9e43083d3 = $(`<div id="html_e4c7457972a246a687f969d9e43083d3" style="width: 100.0%; height: 100.0%;">Stevens: Cases 423</div>`)[0];
+            popup_4a13d965103944439d631a38ce86b8e2.setContent(html_e4c7457972a246a687f969d9e43083d3);
+        
+
+        marker_cf57d1f526db421ead9d6289bfcbf276.bindPopup(popup_4a13d965103944439d631a38ce86b8e2)
+        ;
+
+        
+    
+    
+            var marker_494b033f0d4f439db4058be605d631ec = L.marker(
+                [46.8646, -122.7696],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_3cfe4bfb2a8040b0a52e492888c0ae12 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_494b033f0d4f439db4058be605d631ec.setIcon(icon_3cfe4bfb2a8040b0a52e492888c0ae12);
+        
+    
+        var popup_4e6bc4b979484890bb0a285625c8f7ff = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73baf9d85e394651890a8e8489a3ace7 = $(`<div id="html_73baf9d85e394651890a8e8489a3ace7" style="width: 100.0%; height: 100.0%;">Thurston: Cases 2274</div>`)[0];
+            popup_4e6bc4b979484890bb0a285625c8f7ff.setContent(html_73baf9d85e394651890a8e8489a3ace7);
+        
+
+        marker_494b033f0d4f439db4058be605d631ec.bindPopup(popup_4e6bc4b979484890bb0a285625c8f7ff)
+        ;
+
+        
+    
+    
+            var marker_94dbd9669d7540b3b54744c3dedab3a5 = L.marker(
+                [46.3259, -123.4946],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_452c498cf7f9409eb4c9774a04f3d573 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_94dbd9669d7540b3b54744c3dedab3a5.setIcon(icon_452c498cf7f9409eb4c9774a04f3d573);
+        
+    
+        var popup_414284eaab7a4f31a280f0223fc8a4c5 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d3d8acdb1eb44711a212efa24ecd3dec = $(`<div id="html_d3d8acdb1eb44711a212efa24ecd3dec" style="width: 100.0%; height: 100.0%;">Wahkiakum: Cases 11</div>`)[0];
+            popup_414284eaab7a4f31a280f0223fc8a4c5.setContent(html_d3d8acdb1eb44711a212efa24ecd3dec);
+        
+
+        marker_94dbd9669d7540b3b54744c3dedab3a5.bindPopup(popup_414284eaab7a4f31a280f0223fc8a4c5)
+        ;
+
+        
+    
+    
+            var marker_4019f9ea556f40169a958e90e2b72f7b = L.marker(
+                [46.236999999999995, -118.5855],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_c64aea6c272e404587a06f63d08d77df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4019f9ea556f40169a958e90e2b72f7b.setIcon(icon_c64aea6c272e404587a06f63d08d77df);
+        
+    
+        var popup_51e790463deb43688cb39e5951c5a388 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_756db6e6ac2341de996d78f19af852c2 = $(`<div id="html_756db6e6ac2341de996d78f19af852c2" style="width: 100.0%; height: 100.0%;">Walla Walla: Cases 1727</div>`)[0];
+            popup_51e790463deb43688cb39e5951c5a388.setContent(html_756db6e6ac2341de996d78f19af852c2);
+        
+
+        marker_4019f9ea556f40169a958e90e2b72f7b.bindPopup(popup_51e790463deb43688cb39e5951c5a388)
+        ;
+
+        
+    
+    
+            var marker_9b910467ccee4c9fa8d3cf641b58510c = L.marker(
+                [48.9165138, -121.7845869],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_3fd6f8fcd4c844a0b9649f0fdea39592 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9b910467ccee4c9fa8d3cf641b58510c.setIcon(icon_3fd6f8fcd4c844a0b9649f0fdea39592);
+        
+    
+        var popup_e6acc5a2f3914baf9cabce1bfcbdd7eb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5f91fb7647d14054ac853185c87350a8 = $(`<div id="html_5f91fb7647d14054ac853185c87350a8" style="width: 100.0%; height: 100.0%;">Whatcom: Cases 1890</div>`)[0];
+            popup_e6acc5a2f3914baf9cabce1bfcbdd7eb.setContent(html_5f91fb7647d14054ac853185c87350a8);
+        
+
+        marker_9b910467ccee4c9fa8d3cf641b58510c.bindPopup(popup_e6acc5a2f3914baf9cabce1bfcbdd7eb)
+        ;
+
+        
+    
+    
+            var marker_349506f6beaa4f8a88397b65d0477825 = L.marker(
+                [46.8363, -117.5887],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_3c4967d520e947e59aa5c1019ef12571 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_349506f6beaa4f8a88397b65d0477825.setIcon(icon_3c4967d520e947e59aa5c1019ef12571);
+        
+    
+        var popup_2f737878297549c98be2c228f4adf67d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7c4efe81cb644cf6bb53e67d2f7cedee = $(`<div id="html_7c4efe81cb644cf6bb53e67d2f7cedee" style="width: 100.0%; height: 100.0%;">Whitman: Cases 2007</div>`)[0];
+            popup_2f737878297549c98be2c228f4adf67d.setContent(html_7c4efe81cb644cf6bb53e67d2f7cedee);
+        
+
+        marker_349506f6beaa4f8a88397b65d0477825.bindPopup(popup_2f737878297549c98be2c228f4adf67d)
+        ;
+
+        
+    
+    
+            var marker_a1b213cae9a24e1cae01b4396342bef7 = L.marker(
+                [46.5436, -120.7558],
+                {"color": "gray", "fillOpacity": 0.7}
+            ).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+        
+    
+            var icon_87599d65d86f4aea83fff65018561bc9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "black", "prefix": "glyphicon"}
+            );
+            marker_a1b213cae9a24e1cae01b4396342bef7.setIcon(icon_87599d65d86f4aea83fff65018561bc9);
+        
+    
+        var popup_26dc8fbca4db4bce965c7d2ffd0a1234 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_b7bd233c7e4f4f929baf0728f5bddac8 = $(`<div id="html_b7bd233c7e4f4f929baf0728f5bddac8" style="width: 100.0%; height: 100.0%;">Yakima: Cases 12521</div>`)[0];
+            popup_26dc8fbca4db4bce965c7d2ffd0a1234.setContent(html_b7bd233c7e4f4f929baf0728f5bddac8);
+        
+
+        marker_a1b213cae9a24e1cae01b4396342bef7.bindPopup(popup_26dc8fbca4db4bce965c7d2ffd0a1234)
+        ;
+
+        
+    
+    
+        function geo_json_a4ff2f0939f14d9fa8fd3c92f4981081_styler(feature) {
+            switch(feature.id) {
+                case "53009": case "53065": 
+                    return {"fillColor": "blue"};
+                case "53013": case "53019": case "53069": 
+                    return {"fillColor": "green"};
+                case "53023": case "53031": case "53039": case "53043": case "53049": case "53051": case "53059": 
+                    return {"fillColor": "orange"};
+                case "53033": case "53053": case "53061": case "53063": case "53077": 
+                    return {"fillColor": "black"};
+                default:
+                    return {"fillColor": "red"};
+            }
+        }
+        function geo_json_a4ff2f0939f14d9fa8fd3c92f4981081_onEachFeature(feature, layer) {
+            layer.on({
+                click: function(e) {
+                    map_27517091e9ee4ba7b17f7169755a3979.fitBounds(e.target.getBounds());
+                }
+            });
+        };
+        var geo_json_a4ff2f0939f14d9fa8fd3c92f4981081 = L.geoJson(null, {
+                onEachFeature: geo_json_a4ff2f0939f14d9fa8fd3c92f4981081_onEachFeature,
+            
+                style: geo_json_a4ff2f0939f14d9fa8fd3c92f4981081_styler,
+        }).addTo(feature_group_0a03017b37a240a0b8063e70c813f91b);
+
+        function geo_json_a4ff2f0939f14d9fa8fd3c92f4981081_add (data) {
+            geo_json_a4ff2f0939f14d9fa8fd3c92f4981081.addData(data);
+        }
+            geo_json_a4ff2f0939f14d9fa8fd3c92f4981081_add({"features": [{"geometry": {"coordinates": [[[-118.950288, 47.264049], [-117.958962, 47.258572], [-118.210901, 46.738263], [-119.213182, 46.738263], [-119.372013, 46.738263], [-118.977673, 47.264049], [-118.950288, 47.264049]]], "type": "Polygon"}, "id": "53001", "properties": {"CASES": 1122, "name": "Adams"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-117.038836, 46.426077], [-116.918344, 45.993399], [-117.482468, 45.998876], [-117.230529, 46.464416], [-117.038836, 46.426077]]], "type": "Polygon"}, "id": "53003", "properties": {"CASES": 505, "name": "Asotin"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-119.875891, 46.628724], [-119.454167, 46.678016], [-119.043396, 46.190568999999996], [-118.988627, 45.998876], [-119.432259, 45.916722], [-119.870414, 45.834568], [-119.864937, 46.042691], [-119.875891, 46.628724], [-119.875891, 46.628724]]], "type": "Polygon"}, "id": "53005", "properties": {"CASES": 6508, "name": "Benton"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-120.702909, 48.529222], [-119.870414, 47.95962], [-120.319524, 47.455742], [-120.094969, 47.264049], [-121.11368, 47.598142], [-121.119157, 47.778881], [-121.004141, 48.293714], [-120.702909, 48.529222]]], "type": "Polygon"}, "id": "53007", "properties": {"CASES": 2171, "name": "Chelan"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-122.926547, 48.063682], [-122.948455, 47.866512], [-124.613445, 47.882943], [-124.597014, 48.381345], [-123.983597, 48.162267], [-122.926547, 48.063682]]], "type": "Polygon"}, "id": "53009", "properties": {"CASES": 313, "name": "Clallam"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-122.433623, 45.976968], [-122.247407, 46.053645], [-122.247407, 45.549767], [-122.762239, 45.730506], [-122.784147, 45.850998], [-122.433623, 45.976968]]], "type": "Polygon"}, "id": "53011", "properties": {"CASES": 5985, "name": "Clark"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-118.227332, 46.595862], [-118.216378, 46.590385], [-117.849423, 46.623247], [-117.602961, 45.998876], [-117.975393, 45.998876], [-117.997301, 45.998876], [-118.227332, 46.595862]]], "type": "Polygon"}, "id": "53013", "properties": {"CASES": 25, "name": "Columbia"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-123.216825, 46.387739], [-122.24193, 46.387739], [-122.247407, 46.053645], [-122.433623, 45.976968], [-122.784147, 45.850998], [-123.211348, 46.174138], [-123.216825, 46.387739]]], "type": "Polygon"}, "id": "53015", "properties": {"CASES": 1030, "name": "Cowlitz"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-119.021489, 48.069159], [-118.98315, 47.95962], [-119.213182, 47.861036], [-120.007338, 47.220233], [-120.094969, 47.264049], [-120.319524, 47.455742], [-119.870414, 47.95962], [-119.021489, 48.069159]]], "type": "Polygon"}, "id": "53017", "properties": {"CASES": 1279, "name": "Douglas"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-118.194471, 49.000239], [-118.139701, 48.266329], [-118.342348, 47.893897], [-118.851704, 47.95962], [-118.835273, 49.000239], [-118.194471, 49.000239]]], "type": "Polygon"}, "id": "53019", "properties": {"CASES": 42, "name": "Ferry"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-119.213182, 46.738263], [-118.210901, 46.738263], [-118.216378, 46.590385], [-118.227332, 46.595862], [-118.698349, 46.371308], [-119.043396, 46.190568999999996], [-119.454167, 46.678016], [-119.372013, 46.738263], [-119.213182, 46.738263]]], "type": "Polygon"}, "id": "53021", "properties": {"CASES": 5470, "name": "Franklin"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-117.849423, 46.623247], [-117.230529, 46.464416], [-117.482468, 45.998876], [-117.602961, 45.998876], [-117.849423, 46.623247]]], "type": "Polygon"}, "id": "53023", "properties": {"CASES": 51, "name": "Garfield"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-119.213182, 47.861036], [-118.98315, 47.95962], [-118.972196, 47.94319], [-118.977673, 47.264049], [-119.372013, 46.738263], [-119.454167, 46.678016], [-119.875891, 46.628724], [-119.875891, 46.628724], [-119.974476, 46.738263], [-120.007338, 47.220233], [-119.213182, 47.861036]]], "type": "Polygon"}, "id": "53025", "properties": {"CASES": 3653, "name": "Grant"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-124.323167, 47.532419], [-123.507103, 47.515988], [-123.200394, 47.08331], [-123.162056, 46.793032], [-123.183963, 46.793032], [-123.370179, 46.793032], [-124.098612, 46.793032], [-124.356029, 47.532419], [-124.323167, 47.532419]]], "type": "Polygon"}, "id": "53027", "properties": {"CASES": 863, "name": "Grays Harbor"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-122.751285, 47.740543], [-122.948455, 47.603619], [-123.507103, 47.515988], [-124.323167, 47.532419], [-124.356029, 47.532419], [-124.613445, 47.882943], [-122.948455, 47.866512], [-122.926547, 48.063682], [-122.751285, 47.740543]]], "type": "Polygon"}, "id": "53031", "properties": {"CASES": 114, "name": "Jefferson"}, "type": "Feature"}, {"geometry": {"coordinates": [[[[-121.234173, 47.778881], [-121.119157, 47.778881], [-121.11368, 47.598142], [-121.11368, 47.598142], [-121.38205, 47.088787], [-122.417192, 47.318818], [-122.395284, 47.778881], [-121.234173, 47.778881]]], [[[-122.537684, 47.357157], [-122.537684, 47.400973], [-122.482915, 47.510511], [-122.537684, 47.357157]]]], "type": "MultiPolygon"}, "id": "53033", "properties": {"CASES": 34415, "name": "King"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-122.482915, 47.510511], [-122.537684, 47.400973], [-122.800578, 47.406449], [-122.948455, 47.603619], [-122.751285, 47.740543], [-122.482915, 47.510511]]], "type": "Polygon"}, "id": "53035", "properties": {"CASES": 1965, "name": "Kitsap"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-121.11368, 47.598142], [-121.11368, 47.598142], [-120.094969, 47.264049], [-120.007338, 47.220233], [-119.974476, 46.738263], [-120.511216, 46.738263], [-121.38205, 47.088787], [-121.11368, 47.598142]]], "type": "Polygon"}, "id": "53037", "properties": {"CASES": 807, "name": "Kittitas"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-119.99090699999999, 46.042691], [-119.864937, 46.042691], [-119.870414, 45.834568], [-120.001861, 45.81266], [-120.653617, 45.735983], [-120.834356, 45.675736], [-120.91651, 45.642875], [-121.442296, 45.697644], [-121.52445, 45.725029], [-121.52445, 46.042691], [-119.99090699999999, 46.042691]]], "type": "Polygon"}, "id": "53039", "properties": {"CASES": 234, "name": "Klickitat"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-123.183963, 46.793032], [-123.162056, 46.793032], [-122.203591, 46.760171], [-121.45325, 46.782078], [-121.52445, 46.387739], [-122.24193, 46.387739], [-123.216825, 46.387739], [-123.359225, 46.382262], [-123.370179, 46.793032], [-123.183963, 46.793032]]], "type": "Polygon"}, "id": "53041", "properties": {"CASES": 922, "name": "Lewis"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-118.972196, 47.94319], [-118.851704, 47.95962], [-118.342348, 47.893897], [-117.822039, 47.822697], [-117.822039, 47.258572], [-117.958962, 47.258572], [-118.950288, 47.264049], [-118.977673, 47.264049], [-118.972196, 47.94319]]], "type": "Polygon"}, "id": "53043", "properties": {"CASES": 105, "name": "Lincoln"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-123.507103, 47.515988], [-122.948455, 47.603619], [-122.800578, 47.406449], [-122.822485, 47.192849], [-122.904639, 47.15451], [-123.200394, 47.08331], [-123.507103, 47.515988]]], "type": "Polygon"}, "id": "53045", "properties": {"CASES": 620, "name": "Mason"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-118.835273, 49.000239], [-118.851704, 47.95962], [-118.972196, 47.94319], [-118.98315, 47.95962], [-119.021489, 48.069159], [-119.870414, 47.95962], [-120.702909, 48.529222], [-120.752202, 48.655192], [-120.850787, 49.000239], [-118.835273, 49.000239]]], "type": "Polygon"}, "id": "53047", "properties": {"CASES": 1152, "name": "Okanogan"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-124.098612, 46.793032], [-123.370179, 46.793032], [-123.359225, 46.382262], [-123.72618, 46.289154], [-124.098612, 46.793032]]], "type": "Polygon"}, "id": "53049", "properties": {"CASES": 170, "name": "Pacific"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-117.033359, 49.000239], [-117.033359, 48.846885], [-117.044313, 48.047251], [-117.438653, 48.047251], [-117.427699, 49.000239], [-117.033359, 49.000239]]], "type": "Polygon"}, "id": "53051", "properties": {"CASES": 182, "name": "Pend Oreille"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-122.800578, 47.406449], [-122.537684, 47.400973], [-122.537684, 47.357157], [-122.417192, 47.318818], [-121.38205, 47.088787], [-121.45325, 46.782078], [-122.203591, 46.760171], [-122.822485, 47.192849], [-122.800578, 47.406449]]], "type": "Polygon"}, "id": "53053", "properties": {"CASES": 13068, "name": "Pierce"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-122.329561, 48.644238], [-120.752202, 48.655192], [-120.702909, 48.529222], [-121.004141, 48.293714], [-121.836636, 48.299191], [-122.378853, 48.299191], [-122.488392, 48.644238], [-122.329561, 48.644238]]], "type": "Polygon"}, "id": "53057", "properties": {"CASES": 1621, "name": "Skagit"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-121.52445, 46.387739], [-121.52445, 46.042691], [-121.52445, 45.725029], [-121.924267, 45.648352], [-122.247407, 45.549767], [-122.247407, 46.053645], [-122.24193, 46.387739], [-121.52445, 46.387739]]], "type": "Polygon"}, "id": "53059", "properties": {"CASES": 84, "name": "Skamania"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-121.836636, 48.299191], [-121.004141, 48.293714], [-121.119157, 47.778881], [-121.234173, 47.778881], [-122.395284, 47.778881], [-122.395284, 48.227991], [-122.406238, 48.249898], [-122.378853, 48.299191], [-121.836636, 48.299191]]], "type": "Polygon"}, "id": "53061", "properties": {"CASES": 11298, "name": "Snohomish"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-117.537238, 48.047251], [-117.438653, 48.047251], [-117.044313, 48.047251], [-117.044313, 47.976051], [-117.038836, 47.368111], [-117.038836, 47.258572], [-117.822039, 47.258572], [-117.822039, 47.822697], [-117.537238, 48.047251]]], "type": "Polygon"}, "id": "53063", "properties": {"CASES": 12442, "name": "Spokane"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-117.427699, 49.000239], [-117.438653, 48.047251], [-117.537238, 48.047251], [-117.822039, 47.822697], [-118.342348, 47.893897], [-118.139701, 48.266329], [-118.194471, 49.000239], [-117.427699, 49.000239]]], "type": "Polygon"}, "id": "53065", "properties": {"CASES": 423, "name": "Stevens"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-122.904639, 47.15451], [-122.822485, 47.192849], [-122.203591, 46.760171], [-123.162056, 46.793032], [-123.200394, 47.08331], [-122.904639, 47.15451]]], "type": "Polygon"}, "id": "53067", "properties": {"CASES": 2274, "name": "Thurston"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-123.359225, 46.382262], [-123.216825, 46.387739], [-123.211348, 46.174138], [-123.364702, 46.146753], [-123.545441, 46.261769], [-123.72618, 46.289154], [-123.359225, 46.382262]]], "type": "Polygon"}, "id": "53069", "properties": {"CASES": 11, "name": "Wahkiakum"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-118.698349, 46.371308], [-118.227332, 46.595862], [-117.997301, 45.998876], [-118.58881, 45.998876], [-118.988627, 45.998876], [-119.043396, 46.190568999999996], [-118.698349, 46.371308]]], "type": "Polygon"}, "id": "53071", "properties": {"CASES": 1727, "name": "Walla Walla"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-120.850787, 49.000239], [-120.752202, 48.655192], [-122.329561, 48.644238], [-122.488392, 48.644238], [-122.756762, 49.000239], [-120.850787, 49.000239]]], "type": "Polygon"}, "id": "53073", "properties": {"CASES": 1890, "name": "Whatcom"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-117.822039, 47.258572], [-117.038836, 47.258572], [-117.038836, 47.127126], [-117.038836, 46.541093], [-117.038836, 46.426077], [-117.230529, 46.464416], [-117.849423, 46.623247], [-118.216378, 46.590385], [-118.210901, 46.738263], [-117.958962, 47.258572], [-117.822039, 47.258572]]], "type": "Polygon"}, "id": "53075", "properties": {"CASES": 2007, "name": "Whitman"}, "type": "Feature"}, {"geometry": {"coordinates": [[[-121.38205, 47.088787], [-120.511216, 46.738263], [-119.974476, 46.738263], [-119.875891, 46.628724], [-119.864937, 46.042691], [-119.99090699999999, 46.042691], [-121.52445, 46.042691], [-121.52445, 46.387739], [-121.45325, 46.782078], [-121.38205, 47.088787]]], "type": "Polygon"}, "id": "53077", "properties": {"CASES": 12521, "name": "Yakima"}, "type": "Feature"}], "type": "FeatureCollection"});
+        
+</script>
