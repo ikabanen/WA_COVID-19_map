@@ -1,4 +1,6 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+import requests
 import time
 import cv2
 import pandas
@@ -9,13 +11,9 @@ import os
 from datetime import datetime
 import folium
 
-from selenium.webdriver.chrome.options import Options
-import requests
-import requests
-
 chrome_options = Options()
 chrome_options.add_argument("--headless")
-driver = webdriver.Chrome('C://Users//Lucky//AppData//Local//Programs//Python//Python38//chromedriver.exe', options=chrome_options)
+driver = webdriver.Chrome('path_to_chromedriver_executable_folder//chromedriver.exe', options=chrome_options)
 driver.get("https://www.doh.wa.gov/Emergencies/COVID19/DataDashboard")
 time.sleep(10)
 button = driver.find_element_by_xpath('//a[@class="NoCacheLink"and contains(., "Cases and Deaths by Week")]')
