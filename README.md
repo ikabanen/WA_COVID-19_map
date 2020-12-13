@@ -1,4 +1,4 @@
-# WA_COVID-19_map
+# Automatic WA COVID-19 map generator :cityscape:
 
 Written in Python 3.8
 
